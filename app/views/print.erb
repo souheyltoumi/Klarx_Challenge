@@ -199,7 +199,27 @@ aside h1 {
     aside h2 {
     font-size : 1em;
 }
- 
+a:link, a:visited {
+  background-color: Green;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: blue;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 aside div {
     padding : 5px;
     background-color : #F0F0F0;
@@ -273,75 +293,24 @@ ul.body-list{
     list-style-image : url('../images/small_arrow.png');
     line-height : 1.8em;
 }
-input[type=button], input[type=submit], input[type=reset] {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-a:link, a:visited {
-  background-color: green;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-a:hover, a:active {
-  background-color: blue;
-}
 </style>
 </head>
 <body>
 
-<div class="todo">
-  <div class="panel panel-default">
-    <div class="container">
+<div class="container">
+    <div class="jumbotron">
+      <h1>Thank You For Using Our App</h1>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">Changed Value</div>
       <div class="panel-body">
-        <h1>Change Currency!</h1>
-<form action="/todo" method="post" accept-charset="utf-8">
-<p>Amount to be Changed: <input type="int" name="AmountFrom" value="" id="todo[AmountFrom]" /></p>
-<p>Form</p>
-<div class="control">
-  <label class="radio">
-    <input type="radio" name="USD">
-    USD
-  </label>
-  <label class="radio">
-    <input type="radio" name="CHF">
-    CHF
-  </label>
-  <label class="radio">
-  <input type="radio" name="EURO">
-  EURO
-</label>
-  <p>to</p>
-  </div>
-<div class="control">
-  <label class="radio">
-    <input type="radio" name="USD1">
-    USD
-  </label>
-  <label class="radio">
-    <input type="radio" name="CHF1">
-    CHF
-  </label>
-  <label class="radio">
-  <input type="radio" name="EURO1">
-  EURO
-</label>
-</div><p><input type="submit" value="Change Now!" class="btn btn-success"/></p>
-</form>
-<a href='/history'>History</a>
+        <%= global%>
+      </div>
+      <a href='/'>Return</a>
+      <a href='/history'>History</a>
 
-</div>
-</div>
-</div>
-</div>
+    </div>
+  </div>
 
 </body>
 </html>
