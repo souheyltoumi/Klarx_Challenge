@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'money-currencylayer-bank'
 
 gem "shotgun", "0.9"
 gem "cucumber", "1.2.1"
