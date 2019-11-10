@@ -28,7 +28,6 @@ class ApplicationController < Sinatra::Base
 	mclb.access_key = 'b70a394018b7398799fd2e7a14a89268'
 
 # Update rates (get new rates from remote if expired or access rates from cache)
-	mclb.update_rates
 
 # Force update rates from remote and store in cache
 # mclb.update_rates(true)
